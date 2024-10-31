@@ -66,8 +66,6 @@ class MyApp(MDApp):
                                    orientation='horizontal',
                                    pos_hint ={'center_x':0.2,'center_y':0.05},
                                    size_hint=(0.2,0.2))
-        
-        self.switch=Switch(pos_hint ={'center_x':0.75,'center_y':0.05})
 
         self.playbutton=MDIconButton(pos_hint={'center_x':0.4,'center_y':0.05},
                                      icon='play.png',
@@ -87,7 +85,6 @@ class MyApp(MDApp):
         layout.add_widget(self.progressbar)
 
         layout.add_widget(self.volumeslider)
-        layout.add_widget(self.switch)
 
         Clock.schedule_once(self.playaudio)
 
@@ -96,13 +93,6 @@ class MyApp(MDApp):
 
         self.volumeslider.bind(value=volume)
 
-        def mute(instance,value):
-            if value==True:
-                self.sound.volume=0
-            else:
-                self.sound.volume=1
-
-        self.switch.bind(active=mute)
         return layout
     
     def playaudio(self,obj):
