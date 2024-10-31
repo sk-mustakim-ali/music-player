@@ -1,3 +1,3 @@
-plz give the location of the music file/ the mp3 file in your pc /laptop for to run the python file.
+Please give the location of the music file or the mp3 file on your PC or laptop so that you can run the Python file.
 
 in line number 33.
