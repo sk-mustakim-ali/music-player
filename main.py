@@ -14,7 +14,7 @@ mixer.init()
 class MusicPlayer:
     def __init__(self, root):
         self.root = root
-        self.root.title("Music Player with Album Art and Playlist")
+        self.root.title("AuraTune")
         self.root.geometry("700x600")
 
         # Set the directory where the button images are located
